@@ -7,9 +7,26 @@
 
 body {
   background-color: rgb(58, 193, 98);
+  height: 100vh;
   color: white;
   font-family: 'Playfair Display', serif;
   padding: 5px;
+  position: relative;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+
+.time-bar {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 100%;
+  background-color: white;
 }
 
 header {
