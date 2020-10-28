@@ -14,20 +14,12 @@ body {
   position: relative;
   background-position-x: right;
   background-position-y: bottom;
-  background-size: 60%;
+  background-size: 40%;
   background-repeat: no-repeat;
   background-blend-mode: darken;
 }
 
-.time-bar {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  height: 15px;
-  width: 100%;
-  background-color: white;
-}
+
 
 header {
   display: flex;
@@ -43,7 +35,7 @@ h1 {
   text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);
 }
 
-.load-quote {
+.load-quote { 
   color: #fff;
   text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);
   width: 12em;
@@ -55,10 +47,22 @@ h1 {
   border-radius: 4px;
   border: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.5s;
+  position: relative;
+}
+
+.time-bar {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255,255,255,.3);
 }
 
 .load-quote:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 .load-quote:focus {
